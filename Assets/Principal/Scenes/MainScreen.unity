@@ -759,10 +759,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Char1
       objectReference: {fileID: 0}
-    - target: {fileID: 6359841784273911167, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
 --- !u!1 &518333861
@@ -2122,11 +2118,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1711531916 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2015982819966407337, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
-  m_PrefabInstance: {fileID: 2706233953489983944}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1761370755
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,10 +2903,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: frangoBalde
       objectReference: {fileID: 0}
-    - target: {fileID: 2015982819966407337, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
-      propertyPath: m_TagString
-      value: frango
-      objectReference: {fileID: 0}
     - target: {fileID: 4228309238316582430, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2967,15 +2954,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4228309238316582430, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
   m_PrefabInstance: {fileID: 2706233953489983944}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2706233953489983948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711531916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ac1d075bebc38e40bf218ca883390f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -8,6 +8,7 @@ public class Ferramenta : MonoBehaviour
     public Sprite newSprite;
     public GameObject alimentoPronto;
     private bool destroy = false;
+    private GameObject instantiatedObject; 
     
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class Ferramenta : MonoBehaviour
             Destroy(other.gameObject);
             spriteRenderer.sprite = newSprite; 
             StartCoroutine(FritaAlimento());
-            destroy = false;
+            destroy = true;
         }
         else if (other.gameObject.tag !=  "Player" && other.gameObject.tag != "frangoFrito") 
         {
@@ -34,9 +35,9 @@ public class Ferramenta : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D other)
     {
-        if (destroy && other.gameObject.tag == alimentoPronto.tag)
+        if (other.gameObject.tag == alimentoPronto.tag)
         {
-            Destroy(other.gameObject);
+            destroy = false;
         }
     }
 
@@ -50,7 +51,7 @@ public class Ferramenta : MonoBehaviour
         //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(2f);
 
-        Instantiate(alimentoPronto, transform.position, Quaternion.identity);
+        instantiatedObject = Instantiate(alimentoPronto, transform.position, Quaternion.identity);
 
         //After we have waited seconds print the time again. color blue
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
@@ -59,10 +60,7 @@ public class Ferramenta : MonoBehaviour
 
         if (destroy)
         {
-            print("Destroy");
-            print(destroy);
-            destroy = true;
-            print(destroy);
+            Destroy(instantiatedObject);
         }
         
     }

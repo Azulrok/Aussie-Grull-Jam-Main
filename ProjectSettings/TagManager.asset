@@ -6,8 +6,6 @@ TagManager:
   tags:
   - frango
   - frangoFrito
-  - fritadeira
-  - frangoBalde
   layers:
   - Default
   - TransparentFX
