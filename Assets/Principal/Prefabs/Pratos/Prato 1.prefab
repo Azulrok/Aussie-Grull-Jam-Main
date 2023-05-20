@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2706233953489983948}
   m_Layer: 0
   m_Name: Prato 1
-  m_TagString: frango
+  m_TagString: frangoFrito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,3 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac1d075bebc38e40bf218ca883390f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagPrato: frangoFrito
