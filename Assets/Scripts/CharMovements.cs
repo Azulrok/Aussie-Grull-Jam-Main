@@ -4,29 +4,66 @@ using UnityEngine;
 
 public class CharMovements : MonoBehaviour
 {
-    public float speed;
+    private float moveSpeed = 5f;
 
-    public void Update()
-    {
-        Movement();
+    private Rigidbody2D rb;
+    // private Animator animator;
+
+    Vector2 movement;
+    private PickUp pickUp;
+    
+    void Start() {
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        // animator = gameObject.GetComponent<Animator>();
+        pickUp = gameObject.GetComponent<PickUp>();
+        pickUp.Direction = new Vector2(movement.x, movement.y);
     }
-    private void Movement()
+
+    void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+        
+        if (movement.sqrMagnitude > .1f)
         {
-            transform.position += transform.up * speed * Time.deltaTime;
+            pickUp.Direction = movement.normalized;
         }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position -= transform.up * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position += transform.right * speed * Time.deltaTime;
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.position -= transform.right * speed * Time.deltaTime;
-        }
+
+        // animator.SetFloat("Horizontal", movement.x);
+        // animator.SetFloat("Vertical", movement.y);
+        // animator.SetFloat("Speed", movement.sqrMagnitude);
     }
+    void FixedUpdate ()
+    {
+         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+
+
+
+//     public float speed;
+
+//     public void Update()
+//     {
+//         Movement();
+//     }
+//     private void Movement()
+//     {
+//         if (Input.GetKey(KeyCode.W))
+//         {
+//             transform.position += transform.up * speed * Time.deltaTime;
+//         }
+//         if (Input.GetKey(KeyCode.S))
+//         {
+//             transform.position -= transform.up * speed * Time.deltaTime;
+//         }
+//         if (Input.GetKey(KeyCode.D))
+//         {
+//             transform.position += transform.right * speed * Time.deltaTime;
+//         }
+//         if (Input.GetKey(KeyCode.A))
+//         {
+//             transform.position -= transform.right * speed * Time.deltaTime;
+//         }
+//     }
 }
