@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class EntregaPrato : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+    void OnCollisionEnter2D(Collision2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (gameObject.tag == other.gameObject.tag)
+        {
+            Destroy(other.gameObject);
+        }
+        else if (other.gameObject.tag != "Player" && other.gameObject.tag != gameObject.tag) 
+        {
+            Destroy(other.gameObject);
+        }
     }
 }
