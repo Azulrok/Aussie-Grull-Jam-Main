@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 486887764977572940}
   m_Layer: 7
   m_Name: FrangoFrito
-  m_TagString: Untagged
+  m_TagString: frangoFrito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

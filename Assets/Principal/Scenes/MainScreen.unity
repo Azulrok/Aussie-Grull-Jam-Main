@@ -759,6 +759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Char1
       objectReference: {fileID: 0}
+    - target: {fileID: 6359841784273911167, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
 --- !u!1 &518333861
@@ -2514,25 +2518,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2051620700}
     m_Modifications:
-    - target: {fileID: 486887764977572930, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 61d01e8616313344b978a6518fd86ed6, type: 3}
     - target: {fileID: 486887764977572931, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
       propertyPath: m_Name
       value: Frango
       objectReference: {fileID: 0}
-    - target: {fileID: 486887764977572931, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
-      propertyPath: m_TagString
-      value: frango
-      objectReference: {fileID: 0}
     - target: {fileID: 486887764977572941, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 486887764977572941, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.08024391
       objectReference: {fileID: 0}
     - target: {fileID: 486887764977572941, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2573,10 +2565,6 @@ PrefabInstance:
     - target: {fileID: 486887764977572941, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 486887764977572943, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
-      propertyPath: m_SpriteTilingProperty.pivot.y
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
@@ -2849,14 +2837,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1761370757}
     m_Modifications:
-    - target: {fileID: 2634823502255134079, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 476e92035edc51449bd19d577ba6eb7a, type: 3}
-    - target: {fileID: 2634823502255134079, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8152152852705940155, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2907,7 +2887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709986011753485880, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
       propertyPath: m_TagString
-      value: fritadeira
+      value: frango
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
@@ -2916,51 +2896,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8152152852705940155, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
   m_PrefabInstance: {fileID: 632648100146521906}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &632648100146521908 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8709986011753485880, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
-  m_PrefabInstance: {fileID: 632648100146521906}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &632648100146521909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632648100146521908}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91218856dedec6a4e9f8e43d94100846, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newSprite: {fileID: 21300000, guid: 7fd3cda14282bb7429b8eeb6c121e5bb, type: 3}
-  alimentoPronto: {fileID: 486887764977572931, guid: cf910f0790f60aa438ef789f42fe9b5d, type: 3}
---- !u!61 &632648100146521910
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632648100146521908}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.12794256}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.2558851}
-  m_EdgeRadius: 0
 --- !u!1001 &2706233953489983944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2970,7 +2905,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2015982819966407337, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
       propertyPath: m_Name
-      value: Prato 1
+      value: frangoBalde
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015982819966407337, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
+      propertyPath: m_TagString
+      value: frangoBalde
       objectReference: {fileID: 0}
     - target: {fileID: 4228309238316582430, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
       propertyPath: m_RootOrder
@@ -3015,10 +2954,6 @@ PrefabInstance:
     - target: {fileID: 4228309238316582430, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5494739924269451746, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e599f74b87fb18b49b5324b3e3fac75a, type: 3}

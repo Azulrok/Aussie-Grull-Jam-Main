@@ -7,25 +7,40 @@ public class Ferramenta : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public Sprite newSprite;
     public GameObject alimentoPronto;
+    private bool destroy = false;
     
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        // print(transform.position);
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        print(collision.gameObject);
-        if (gameObject.tag == "fritadeira" && collision.gameObject.tag == "frango")
+        print(other.gameObject);
+        if (gameObject.tag == other.gameObject.tag)
         {
-            Destroy(collision.gameObject);
+            Destroy(other.gameObject);
             spriteRenderer.sprite = newSprite; 
             StartCoroutine(FritaAlimento());
+            destroy = false;
+        }
+        else if (other.gameObject.tag !=  "Player" && other.gameObject.tag != "frangoFrito") 
+        {
+            Destroy(other.gameObject);
         }
     }
+
+    void OnCollisionExit2D(Collision2D other)
+    {
+        if (destroy && other.gameObject.tag == alimentoPronto.tag)
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+
 
     IEnumerator FritaAlimento()
     {
@@ -33,14 +48,22 @@ public class Ferramenta : MonoBehaviour
         Debug.Log("Started Coroutine at timestamp : " + Time.time);
 
         //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
 
         Instantiate(alimentoPronto, transform.position, Quaternion.identity);
 
         //After we have waited seconds print the time again. color blue
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
         
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(5f);
+
+        if (destroy)
+        {
+            print("Destroy");
+            print(destroy);
+            destroy = true;
+            print(destroy);
+        }
         
     }
     
