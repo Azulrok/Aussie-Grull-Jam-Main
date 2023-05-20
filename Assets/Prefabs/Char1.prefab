@@ -168,7 +168,7 @@ MonoBehaviour:
   holdSpot: {fileID: 7742481723145808789}
   pickUpMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!61 &3628516357377623638
 BoxCollider2D:
   m_ObjectHideFlags: 0
