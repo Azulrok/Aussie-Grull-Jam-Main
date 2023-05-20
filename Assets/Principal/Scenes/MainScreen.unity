@@ -2907,7 +2907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709986011753485880, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
       propertyPath: m_TagString
-      value: Fritadeira
+      value: fritadeira
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
@@ -2934,7 +2934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newSprite: {fileID: 21300000, guid: 7fd3cda14282bb7429b8eeb6c121e5bb, type: 3}
-  alimentoPronto: {fileID: 0}
+  alimentoPronto: {fileID: 486887764977572931, guid: cf910f0790f60aa438ef789f42fe9b5d, type: 3}
 --- !u!61 &632648100146521910
 BoxCollider2D:
   m_ObjectHideFlags: 0

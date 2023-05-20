@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - frango
-  - Fritadeira
   - frangoFrito
-  - FrangoBalde
+  - fritadeira
+  - frangoBalde
   layers:
   - Default
   - TransparentFX

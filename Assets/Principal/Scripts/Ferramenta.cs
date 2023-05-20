@@ -19,7 +19,7 @@ public class Ferramenta : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         print(collision.gameObject);
-        if (gameObject.tag == "Fritadeira" && collision.gameObject.tag == "frango")
+        if (gameObject.tag == "fritadeira" && collision.gameObject.tag == "frango")
         {
             Destroy(collision.gameObject);
             spriteRenderer.sprite = newSprite; 
