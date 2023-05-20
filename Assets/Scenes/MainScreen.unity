@@ -3307,6 +3307,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2051620700}
     m_Modifications:
+    - target: {fileID: 486887764977572930, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 61d01e8616313344b978a6518fd86ed6, type: 3}
     - target: {fileID: 486887764977572931, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
       propertyPath: m_Name
       value: Frango
@@ -3630,6 +3634,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1761370757}
     m_Modifications:
+    - target: {fileID: 2634823502255134079, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 476e92035edc51449bd19d577ba6eb7a, type: 3}
     - target: {fileID: 8152152852705940155, guid: d4a7e5e6c56b3da43a2c7774c9fd8fdc, type: 3}
       propertyPath: m_RootOrder
       value: 0
