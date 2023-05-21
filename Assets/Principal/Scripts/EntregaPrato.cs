@@ -6,6 +6,15 @@ public class EntregaPrato : MonoBehaviour
 {
     private bool isActive = false;
 
+
+    public void mudaStatus(bool option)
+    {
+        if (option == true)
+            isActive = true;
+        else
+            isActive = false;
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (gameObject.tag == other.gameObject.tag && isActive)
@@ -18,6 +27,7 @@ public class EntregaPrato : MonoBehaviour
         else if (other.gameObject.tag != "Player" )//&& other.gameObject.tag != gameObject.tag) 
         {
             print("prato errado");
+            other.gameObject.transform.position = new Vector2(-24.4f,2.9f);
             other.gameObject.GetComponent<Alimento>().destroiObjeto();
         }
     }
