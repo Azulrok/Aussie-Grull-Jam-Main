@@ -21,6 +21,7 @@ public class PickUp : MonoBehaviour
                 itemHolding.transform.parent = null;
                 if (itemHolding.GetComponent<Rigidbody2D>())
                         itemHolding.GetComponent<Rigidbody2D>().simulated = true;
+                itemHolding.GetComponent<Alimento>().destroiObjeto();
                 itemHolding = null;
             }
             else

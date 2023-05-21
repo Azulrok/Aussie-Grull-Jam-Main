@@ -6,6 +6,10 @@ TagManager:
   tags:
   - frango
   - frangoFrito
+  - hamburguer
+  - hamburguerPronto
+  - cookie
+  - cookieAssado
   layers:
   - Default
   - TransparentFX

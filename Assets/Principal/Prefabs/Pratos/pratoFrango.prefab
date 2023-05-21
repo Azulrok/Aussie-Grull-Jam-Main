@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9159432004503887280}
   - component: {fileID: 2706233953489983948}
   m_Layer: 0
-  m_Name: Prato 1
+  m_Name: pratoFrango
   m_TagString: frangoFrito
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
