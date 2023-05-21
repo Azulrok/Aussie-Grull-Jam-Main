@@ -35,6 +35,9 @@ public class GestorComandas : MonoBehaviour
         {
             case "frango":
                 // Perform action for "frango" option
+                frangoBalde.GetComponent<EntregaPrato>().mudaStatus(true);
+                pratoHamburguer.GetComponent<EntregaPrato>().mudaStatus(false);
+                pratoCookie.GetComponent<EntregaPrato>().mudaStatus(false);
                 Debug.Log("Frango selected");
                 break;
 
