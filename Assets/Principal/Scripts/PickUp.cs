@@ -9,6 +9,7 @@ public class PickUp : MonoBehaviour
     // public GameObject destroyEffect;
     public Vector3 Direction { get; set; }
     private GameObject itemHolding;
+    private bool emMaos = false;
 
     
     void Update()
