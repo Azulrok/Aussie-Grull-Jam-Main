@@ -462,7 +462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4134626954166931045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 2.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -577,7 +577,6 @@ MonoBehaviour:
   - {fileID: 681357750}
   - {fileID: 2114570898}
   - {fileID: 235264735}
-  skeletonMecanim: {fileID: 2114570900}
   speed: 6.5
 --- !u!50 &2824368570091495729
 Rigidbody2D:
@@ -629,7 +628,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.051073074, y: 1.6918099}
+  m_Offset: {x: 0.1848551, y: 1.6918099}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -640,5 +639,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.021471, y: 3.234466}
+  m_Size: {x: 3.6086261, y: 3.234466}
   m_EdgeRadius: 0
