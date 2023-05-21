@@ -56,11 +56,11 @@ public class Ferramenta : MonoBehaviour
         //After we have waited seconds print the time again. color blue
         Debug.Log("Finished Coroutine at timestamp : " + Time.time);
         
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
         if (destroy)
         {
-            Destroy(instantiatedObject);
+            instantiatedObject.GetComponent<Alimento>().destroiObjeto();
         }
         
     }
