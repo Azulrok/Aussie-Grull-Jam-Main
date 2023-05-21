@@ -10,7 +10,7 @@ public class EntregaPrato : MonoBehaviour
     {
         print(gameObject.tag);
         print(tagPrato);
-        if (gameObject.tag == tagPrato)
+        if (gameObject.tag == other.gameObject.tag)
         {
             print("prato certo");
             other.gameObject.transform.position = new Vector2(-24.4f,2.9f);
