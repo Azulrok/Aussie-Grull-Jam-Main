@@ -5,6 +5,12 @@ using UnityEngine;
 public class EntregaPrato : MonoBehaviour
 {
     private bool isActive = false;
+    private GameObject manager;
+
+    void Start()
+    {
+        manager = transform.parent.gameObject;
+    }
 
 
     public void mudaStatus(bool option)
@@ -23,6 +29,7 @@ public class EntregaPrato : MonoBehaviour
             other.gameObject.transform.position = new Vector2(-24.4f,2.9f);
             other.gameObject.GetComponent<Alimento>().destroiObjeto();
             InfoUI.pontos = InfoUI.pontos +1;
+            // manager.GetComponent<GestorComandas>().NovaComanda();
         }
         else if (other.gameObject.tag != "Player" )//&& other.gameObject.tag != gameObject.tag) 
         {
@@ -32,3 +39,6 @@ public class EntregaPrato : MonoBehaviour
         }
     }
 }
+
+
+
