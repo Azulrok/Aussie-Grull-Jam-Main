@@ -25,8 +25,8 @@ public class CharMovements : MonoBehaviour
 
     void Update()
     {
-        //movement.x = Input.GetAxisRaw("Horizontal");
-        //movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
 
         Movement();
 
@@ -35,10 +35,10 @@ public class CharMovements : MonoBehaviour
             pickUp.Direction = movement.normalized;
         }
     }
-    void FixedUpdate ()
-    {
-         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-    }
+    // void FixedUpdate ()
+    // {
+    //      rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    // }
 
     public float speed;  
     

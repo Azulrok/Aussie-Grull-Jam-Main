@@ -27,7 +27,7 @@ public class PickUp : MonoBehaviour
             }
             else
             {   //position + direcao do personagem magnitude = 1, radious, mask
-                Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + Direction, .24f, pickUpMask);
+                Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + Direction, .500f, pickUpMask);
                 if (pickUpItem)
                 {
                     itemHolding = pickUpItem.gameObject;
@@ -51,7 +51,7 @@ public class PickUp : MonoBehaviour
     IEnumerator ThrowItem(GameObject item)
     {
         Vector3 startPoint = item.transform.position;
-        Vector3 endPoint = transform.position + Direction * 5;
+        Vector3 endPoint = transform.position + Direction * 10;
         item.transform.parent = null;
         for (int i = 0; i < 50; i++)
         {
