@@ -14,7 +14,7 @@ public class PickUp : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             if(itemHolding)
             {
@@ -27,7 +27,7 @@ public class PickUp : MonoBehaviour
             }
             else
             {   //position + direcao do personagem magnitude = 1, radious, mask
-                Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + Direction, .500f, pickUpMask);
+                Collider2D pickUpItem = Physics2D.OverlapCircle(transform.position + Direction, 2f, pickUpMask);
                 if (pickUpItem)
                 {
                     itemHolding = pickUpItem.gameObject;
