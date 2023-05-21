@@ -28,7 +28,7 @@ public class Ferramenta : MonoBehaviour
             StartCoroutine(FritaAlimento());
             destroy = true;
         }
-        else if (other.gameObject.tag !=  "Player" && other.gameObject.tag != "frangoFrito") 
+        else if (other.gameObject.tag !=  "Player" && other.gameObject.tag != "frangoFrito"  && other.gameObject.tag != "cookieAssado" && other.gameObject.tag != "hamburguerPronto") 
         {
             other.gameObject.GetComponent<Alimento>().destroiObjeto();
         }
