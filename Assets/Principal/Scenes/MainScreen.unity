@@ -813,6 +813,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6359841784273911166, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359841784273911166, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6359841784273911166, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6359841784273911167, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
       propertyPath: m_Name
       value: Char1
@@ -1454,7 +1466,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.639925
+  orthographic size: 17.349207
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
