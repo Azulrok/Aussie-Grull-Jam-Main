@@ -60,6 +60,8 @@ public class PickUp : MonoBehaviour
         }
         if (item.GetComponent<Rigidbody2D>())
             item.GetComponent<Rigidbody2D>().simulated = true;
+        item.GetComponent<Alimento>().destroiObjeto();
+        item = null;
         // Instantiate(destroyEffect, item.transform.position, Quaternion.identity);
         // Destroy(item);
     }
