@@ -26,7 +26,7 @@ public class EntregaPrato : MonoBehaviour
         if (gameObject.tag == other.gameObject.tag)
         {
             print("prato certo");
-            other.gameObject.transform.position = new Vector2(-24.4f,2.9f);
+            other.gameObject.transform.position = new Vector2(-100.4f,2.9f);
             other.gameObject.GetComponent<Alimento>().destroiObjeto();
             InfoUI.pontos = InfoUI.pontos +1;
             // manager.GetComponent<GestorComandas>().NovaComanda();

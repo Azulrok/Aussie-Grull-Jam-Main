@@ -6,6 +6,7 @@ public class Ferramenta : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     public Sprite newSprite;
+    public Sprite originalSprite;
     public GameObject alimentoPronto;
     private bool destroy = false;
     private GameObject instantiatedObject; 
@@ -29,7 +30,7 @@ public class Ferramenta : MonoBehaviour
         }
         else if (other.gameObject.tag !=  "Player" && other.gameObject.tag != "frangoFrito") 
         {
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<Alimento>().destroiObjeto();
         }
     }
 
@@ -62,6 +63,7 @@ public class Ferramenta : MonoBehaviour
         {
             instantiatedObject.GetComponent<Alimento>().destroiObjeto();
         }
+        spriteRenderer.sprite = originalSprite; 
         
     }
     
