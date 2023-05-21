@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 4301142}
   - component: {fileID: 4301144}
   - component: {fileID: 4301143}
+  - component: {fileID: 4301145}
   m_Layer: 5
   m_Name: Comanda2
   m_TagString: Untagged
@@ -199,6 +200,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4301141}
   m_CullTransparentMesh: 1
+--- !u!114 &4301145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4301141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310997d90d0486f459e25880f395267b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frangoFrito: {fileID: 21300000, guid: 9c2c25cdab33c434e959d382d3b79d94, type: 3}
+  hamburguero: {fileID: 21300000, guid: 849b5da8cd3dc0a428bc921c66b6f435, type: 3}
+  cookie: {fileID: 21300000, guid: cc4c3524c7779d44dbcf4d432bbe9d06, type: 3}
+  id: 2
 --- !u!1 &50870649
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +640,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322161620}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.5, y: -0.5, z: 0.22751322}
+  m_LocalPosition: {x: -16.8, y: 4.1, z: 0.22751322}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -707,8 +724,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399023093}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -20, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.88, y: 12.53, z: 0}
   m_LocalScale: {x: 12.462, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -716,7 +733,7 @@ Transform:
   - {fileID: 247045103}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &399023096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -845,33 +862,17 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 3628516357377623638, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_Size.x
-      value: 2.021471
-      objectReference: {fileID: 0}
-    - target: {fileID: 3628516357377623638, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_Size.y
-      value: 3.234466
-      objectReference: {fileID: 0}
-    - target: {fileID: 3628516357377623638, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.051073074
-      objectReference: {fileID: 0}
-    - target: {fileID: 3628516357377623638, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_Offset.y
-      value: 1.6918099
-      objectReference: {fileID: 0}
     - target: {fileID: 6359841784273911165, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6359841784273911165, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.89
+      value: -11.6
       objectReference: {fileID: 0}
     - target: {fileID: 6359841784273911165, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: 6359841784273911165, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
       propertyPath: m_LocalPosition.z
@@ -904,18 +905,6 @@ PrefabInstance:
     - target: {fileID: 6359841784273911165, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841784273911166, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 0b9e159b363a1ff4f8982693963e393d, type: 3}
-    - target: {fileID: 6359841784273911166, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6359841784273911166, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6359841784273911167, guid: f3ed4b6abd33cbe428e9e9a08f6df761, type: 3}
       propertyPath: m_Name
@@ -1312,6 +1301,7 @@ GameObject:
   - component: {fileID: 843421574}
   - component: {fileID: 843421576}
   - component: {fileID: 843421575}
+  - component: {fileID: 843421577}
   m_Layer: 5
   m_Name: Comanda3
   m_TagString: Untagged
@@ -1377,6 +1367,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843421573}
   m_CullTransparentMesh: 1
+--- !u!114 &843421577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843421573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 310997d90d0486f459e25880f395267b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frangoFrito: {fileID: 21300000, guid: 9c2c25cdab33c434e959d382d3b79d94, type: 3}
+  hamburguero: {fileID: 21300000, guid: 849b5da8cd3dc0a428bc921c66b6f435, type: 3}
+  cookie: {fileID: 21300000, guid: cc4c3524c7779d44dbcf4d432bbe9d06, type: 3}
+  id: 3
 --- !u!1 &999760644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,15 +2788,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1761370755}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 12, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 16.12, y: 1.81, z: 0}
   m_LocalScale: {x: 11.994675, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 632648100146521907}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1882892283
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,6 +3190,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 310997d90d0486f459e25880f395267b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  frangoFrito: {fileID: 21300000, guid: 9c2c25cdab33c434e959d382d3b79d94, type: 3}
+  hamburguero: {fileID: 21300000, guid: 849b5da8cd3dc0a428bc921c66b6f435, type: 3}
+  cookie: {fileID: 21300000, guid: cc4c3524c7779d44dbcf4d432bbe9d06, type: 3}
+  id: 1
 --- !u!1 &2051620698
 GameObject:
   m_ObjectHideFlags: 0
@@ -3261,7 +3271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051620698}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 20, y: 0, z: 0}
+  m_LocalPosition: {x: -16.24, y: 1.52, z: 0}
   m_LocalScale: {x: 12.462, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
