@@ -147,3 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alimentoNovo: {fileID: 486887764977572931}
+  posX: 19.75
+  posY: 3.38

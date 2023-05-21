@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 486887764977572930}
   - component: {fileID: 486887764977572943}
   - component: {fileID: 486887764977572940}
+  - component: {fileID: -1460365790667137914}
   m_Layer: 7
   m_Name: FrangoFrito
   m_TagString: frangoFrito
@@ -133,3 +134,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-1460365790667137914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486887764977572931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f8dc26f67e9ed94884b5109c23b079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alimentoNovo: {fileID: 486887764977572931, guid: f341eb2ef65f03c498133d74fe1998b0, type: 3}
+  posX: 19.75
+  posY: 3.38

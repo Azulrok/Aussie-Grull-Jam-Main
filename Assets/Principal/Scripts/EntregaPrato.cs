@@ -14,11 +14,12 @@ public class EntregaPrato : MonoBehaviour
         {
             print("prato certo");
             Destroy(other.gameObject);
+            other.gameObject.GetComponent<Alimento>().destroiObjeto();
         }
         else if (other.gameObject.tag != "Player" && other.gameObject.tag != gameObject.tag) 
         {
             print("prato errado");
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<Alimento>().destroiObjeto();
         }
     }
 }
