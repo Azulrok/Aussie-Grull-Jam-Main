@@ -13,7 +13,7 @@ public class EntregaPrato : MonoBehaviour
         if (gameObject.tag == tagPrato)
         {
             print("prato certo");
-            Destroy(other.gameObject);
+            other.gameObject.transform.position = new Vector2(-24.4f,2.9f);
             other.gameObject.GetComponent<Alimento>().destroiObjeto();
         }
         else if (other.gameObject.tag != "Player" && other.gameObject.tag != gameObject.tag) 
