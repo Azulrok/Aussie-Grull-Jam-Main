@@ -17,7 +17,7 @@ public class EntregaPrato : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (gameObject.tag == other.gameObject.tag && isActive)
+        if (gameObject.tag == other.gameObject.tag)
         {
             print("prato certo");
             other.gameObject.transform.position = new Vector2(-24.4f,2.9f);

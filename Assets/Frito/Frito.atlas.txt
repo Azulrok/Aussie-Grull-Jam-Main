@@ -1,0 +1,17 @@
+Frito.png
+size:256,256
+filter:Linear,Linear
+pma:true
+scale:0.5
+Base
+bounds:0,37,131,203
+BraçoD
+bounds:0,0,37,62
+rotate:90
+BraçoE
+bounds:131,106,25,65
+PernaD
+bounds:131,171,25,69
+PernaE
+bounds:62,12,25,69
+rotate:90

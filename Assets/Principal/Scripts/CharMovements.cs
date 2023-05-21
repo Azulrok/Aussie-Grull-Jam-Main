@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Spine.Unity;
 
 public class CharMovements : MonoBehaviour
 {
     private float moveSpeed = 5f;
 
+    public GameObject[] anims;
+  
     private Rigidbody2D rb;
     // private Animator animator;
 
     Vector2 movement;
     private PickUp pickUp;
     
-    void Start() {
+    void Start() 
+    {      
         rb = gameObject.GetComponent<Rigidbody2D>();
         // animator = gameObject.GetComponent<Animator>();
         pickUp = gameObject.GetComponent<PickUp>();
@@ -21,49 +25,59 @@ public class CharMovements : MonoBehaviour
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-        
+        //movement.x = Input.GetAxisRaw("Horizontal");
+        //movement.y = Input.GetAxisRaw("Vertical");
+
+        Movement();
+
         if (movement.sqrMagnitude > .1f)
         {
             pickUp.Direction = movement.normalized;
         }
-
-        // animator.SetFloat("Horizontal", movement.x);
-        // animator.SetFloat("Vertical", movement.y);
-        // animator.SetFloat("Speed", movement.sqrMagnitude);
     }
     void FixedUpdate ()
     {
          rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
+    public float speed;  
+    
+    private void Movement()
+     {
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.position += transform.up * speed * Time.deltaTime;
+            anims[0].SetActive(false);
+            anims[1].SetActive(false);
+            anims[2].SetActive(true);
+            anims[1].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+         {
+            transform.position -= transform.up * speed * Time.deltaTime;
+            anims[0].SetActive(true);
+            anims[1].SetActive(false);
+            anims[2].SetActive(false);
+            anims[1].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 
+        }
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+         {
+             transform.position += transform.right * speed * Time.deltaTime;
+             anims[0].SetActive(false);
+             anims[1].SetActive(true);
+             anims[2].SetActive(false);
+             anims[1].transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 
+        }
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+         {
+             transform.position -= transform.right * speed * Time.deltaTime;
+             anims[0].SetActive(false);
+             anims[1].SetActive(true);
+             anims[2].SetActive(false);
+             anims[1].transform.rotation = Quaternion.Euler(0f, -180f, 0f);
 
-//     public float speed;
-
-//     public void Update()
-//     {
-//         Movement();
-//     }
-//     private void Movement()
-//     {
-//         if (Input.GetKey(KeyCode.W))
-//         {
-//             transform.position += transform.up * speed * Time.deltaTime;
-//         }
-//         if (Input.GetKey(KeyCode.S))
-//         {
-//             transform.position -= transform.up * speed * Time.deltaTime;
-//         }
-//         if (Input.GetKey(KeyCode.D))
-//         {
-//             transform.position += transform.right * speed * Time.deltaTime;
-//         }
-//         if (Input.GetKey(KeyCode.A))
-//         {
-//             transform.position -= transform.right * speed * Time.deltaTime;
-//         }
-//     }
+        }
+    }
 }
